@@ -21,5 +21,10 @@ namespace SalesWebMVC.Controllers
             var list = _sel.ListSeller();
             return View(list);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
