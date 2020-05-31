@@ -36,6 +36,12 @@
         <dd>
             @Html.DisplayFor(model => model.BaseSalary)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Departament)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Departament.Name)
+        </dd>
     </dl>
     <form asp-action="Delete">
     <input type="hidden" asp-for="Id" />
