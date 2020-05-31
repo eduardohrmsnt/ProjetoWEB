@@ -32,4 +32,3 @@ C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netc
 C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netcoreapp2.1\SalesWebMVC.dll
 C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netcoreapp2.1\SalesWebMVC.pdb
 C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netcoreapp2.1\SalesWebMVC.csproj.CopyComplete
-C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Departaments\Index.cshtml.g.cs
