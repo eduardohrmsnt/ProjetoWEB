@@ -28,7 +28,7 @@ namespace SalesWebMVC.Controllers
         public IActionResult Create()
         {
             var departament = _depservice.FindAll();
-            var viewmodel = new SellerFormViewModel { Departaments = departament}
+            var viewmodel = new SellerFormViewModel { Departaments = departament };
             return View(viewmodel);
         }
 
@@ -38,6 +38,43 @@ namespace SalesWebMVC.Controllers
         {
             _sel.Insert(seller);
             return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+            var obj = _sel.FindById(id.Value);
+            if(obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            _sel.Remove(id);
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Details(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var obj = _sel.FindById(id.Value);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
         }
     }
 }
