@@ -9,18 +9,31 @@ namespace SalesWebMVC.Models
     public class Seller
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "Campo {0} Obrigatório")]
+        [StringLength(0,MinimumLength =3,ErrorMessage ="O {0} tem que ter entre {2} e {1} letras!")]
         public string Name { get; set; }
+
+        [Required(ErrorMessage = "Campo {0} Obrigatório")]
+        [EmailAddress(ErrorMessage = "E-mail inválido!")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "Campo {0} Obrigatório")]
         [Display(Name = "Birth Date")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime BirthDate { get; set; }
+
+        [Required(ErrorMessage = "Campo {0} Obrigatório")]
+        [Range(100.0,50000.0, ErrorMessage = "{0} tem que ser entre {1} e {2}")]
         [Display(Name = "Base Salary")]
         [DisplayFormat(DataFormatString = "{0:F2}")]
         public double  BaseSalary { get; set; }
+
         public Departament Departament { get; set; }
         public int DepartamentId { get; set; }
+
         public ICollection<SallesRecord> Sales { get; set; } = new List<SallesRecord>();
 
         public Seller()
