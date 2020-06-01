@@ -44,3 +44,4 @@ C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netc
 C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\Sellers\Edit.cshtml.g.cs
 C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\SallesRecords\Index.cshtml.g.cs
 C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\SallesRecords\SimpleSearch.cshtml.g.cs
+C:\Users\Eduardo Hermes Neto\source\repos\SalesWebMVC\SalesWebMVC\obj\Debug\netcoreapp2.1\Razor\Views\SallesRecords\GroupingSearch.cshtml.g.cs
